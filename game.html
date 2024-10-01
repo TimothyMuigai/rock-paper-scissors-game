@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="heading">
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+
+        <div class="player1">
+            <h2>Player One</h2>
+            <div class="scores">
+                Points:<input type="text" value="0" id="pl-score1" disabled>
+                
+            </div>
+            <div class="pl-one">
+                <button class="pl-one-select">rock 🪨</button>
+                <button class="pl-one-select">paper📄</button>
+                <button class="pl-one-select">scissors✂️</button>
+            </div>
+        </div>
+
+        <div class="mid-text">
+            <h1>Who will win</h1>
+            <input class="txt" value="Begin!" disabled><br>
+        </div>
+
+        <div class="player2">
+            <h2>Player Two</h2>
+            <div class="scores">
+                Points:<input type="text" value="0" id="pl-score2" disabled>
+                
+            </div>
+            <div class="player-two">
+                <button class="pl-two-select">rock 🪨</button>
+                <button class="pl-two-select">paper📄</button>
+                <button class="pl-two-select">scissors✂️</button>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button onclick="restartGame()" class ="reset-btn">Restart</button>
+        </div>
+
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
